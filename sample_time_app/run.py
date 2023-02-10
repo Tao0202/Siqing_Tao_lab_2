@@ -11,7 +11,7 @@ def hello_world():
 @app.route('/time')
 def get_time():
     # ct stores current time
-    ct = datetime.now()
+    ct = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
     return ct
 
 
